@@ -37,5 +37,5 @@ while running:
             elif BMI >= 30:
                 cat = "obese"
             sg.popup(f"Your BMI is {BMI}", f"You are {cat}")
-        except:
+        except ValueError:
             sg.popup("Please enter a valid weight/height!")
